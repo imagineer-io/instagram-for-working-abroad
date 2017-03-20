@@ -12,6 +12,11 @@
 		A9479B071E7FD796008697AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9479B051E7FD796008697AE /* Main.storyboard */; };
 		A9479B091E7FD796008697AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9479B081E7FD796008697AE /* Assets.xcassets */; };
 		A9479B0C1E7FD796008697AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9479B0A1E7FD796008697AE /* LaunchScreen.storyboard */; };
+		A9479B171E7FD843008697AE /* SHCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9479B131E7FD843008697AE /* SHCollectionViewCell.swift */; };
+		A9479B181E7FD843008697AE /* SHCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9479B141E7FD843008697AE /* SHCollectionViewCell.xib */; };
+		A9479B191E7FD843008697AE /* SHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9479B151E7FD843008697AE /* SHViewController.swift */; };
+		A9479B1A1E7FD843008697AE /* SHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9479B161E7FD843008697AE /* SHViewController.xib */; };
+		A9479B1D1E7FD8BD008697AE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9479B1C1E7FD8BD008697AE /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A9479B081E7FD796008697AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9479B0B1E7FD796008697AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9479B0D1E7FD796008697AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9479B131E7FD843008697AE /* SHCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9479B141E7FD843008697AE /* SHCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9479B151E7FD843008697AE /* SHViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHViewController.swift; sourceTree = "<group>"; };
+		A9479B161E7FD843008697AE /* SHViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHViewController.xib; sourceTree = "<group>"; };
+		A9479B1C1E7FD8BD008697AE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		A9479B001E7FD796008697AE /* instagram-clone */ = {
 			isa = PBXGroup;
 			children = (
+				A9479B1B1E7FD84F008697AE /* sharaku */,
 				A9479B011E7FD796008697AE /* AppDelegate.swift */,
 				A9479B031E7FD796008697AE /* ViewController.swift */,
 				A9479B051E7FD796008697AE /* Main.storyboard */,
 				A9479B081E7FD796008697AE /* Assets.xcassets */,
+				A9479B1C1E7FD8BD008697AE /* Media.xcassets */,
 				A9479B0A1E7FD796008697AE /* LaunchScreen.storyboard */,
 				A9479B0D1E7FD796008697AE /* Info.plist */,
 			);
 			path = "instagram-clone";
+			sourceTree = "<group>";
+		};
+		A9479B1B1E7FD84F008697AE /* sharaku */ = {
+			isa = PBXGroup;
+			children = (
+				A9479B131E7FD843008697AE /* SHCollectionViewCell.swift */,
+				A9479B141E7FD843008697AE /* SHCollectionViewCell.xib */,
+				A9479B151E7FD843008697AE /* SHViewController.swift */,
+				A9479B161E7FD843008697AE /* SHViewController.xib */,
+			);
+			name = sharaku;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +146,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9479B1A1E7FD843008697AE /* SHViewController.xib in Resources */,
 				A9479B0C1E7FD796008697AE /* LaunchScreen.storyboard in Resources */,
 				A9479B091E7FD796008697AE /* Assets.xcassets in Resources */,
 				A9479B071E7FD796008697AE /* Main.storyboard in Resources */,
+				A9479B1D1E7FD8BD008697AE /* Media.xcassets in Resources */,
+				A9479B181E7FD843008697AE /* SHCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +164,8 @@
 			files = (
 				A9479B041E7FD796008697AE /* ViewController.swift in Sources */,
 				A9479B021E7FD796008697AE /* AppDelegate.swift in Sources */,
+				A9479B171E7FD843008697AE /* SHCollectionViewCell.swift in Sources */,
+				A9479B191E7FD843008697AE /* SHViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
