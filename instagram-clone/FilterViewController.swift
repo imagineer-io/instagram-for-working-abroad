@@ -13,6 +13,7 @@ class FilterViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     var image: UIImage?
+    var filterIndex = 0
     
     let filterNameList = [
         "No Filter",
@@ -94,6 +95,16 @@ class FilterViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     // MARK: UICollectionViewDelegate
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        filterIndex = indexPath.row
+        if filterIndex != 0 {
+            imageView.image = createFilteredImage(filterName: filterNameList[indexPath.row], image: image!)
+        } else {
+            imageView.image = self.image
+        }
+    }
     
     /*
      // Uncomment this method to specify if the specified item should be highlighted during tracking
