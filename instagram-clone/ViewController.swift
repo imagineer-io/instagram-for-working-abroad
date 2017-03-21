@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SHViewControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     
@@ -18,6 +18,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary
         imagePickerController.allowsEditing = false
         self.present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    @IBAction func filterButtonPressed(_ sender: Any) {
+        let sharakuController = SHViewController(image: imageView.image!)
+        sharakuController.delegate = self
+        self.present(sharakuController, animated: true, completion: nil)
+    }
+    
+    func shViewControllerImageDidFilter(image: UIImage) {
+        //
+    }
+    
+    func shViewControllerDidCancel() {
+        // 
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
