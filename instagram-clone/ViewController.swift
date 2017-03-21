@@ -20,11 +20,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.present(imagePickerController, animated: true, completion: nil)
     }
     
-    @IBAction func filterButtonPressed(_ sender: Any) {
-        let sharakuController = SHViewController(image: imageView.image!)
-        sharakuController.delegate = self
-        self.present(sharakuController, animated: true, completion: nil)
-    }
+//    @IBAction func filterButtonPressed(_ sender: Any) {
+//        let sharakuController = SHViewController(image: imageView.image!)
+//        sharakuController.delegate = self
+//        self.present(sharakuController, animated: true, completion: nil)
+//    }
     
     func shViewControllerImageDidFilter(image: UIImage) {
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)

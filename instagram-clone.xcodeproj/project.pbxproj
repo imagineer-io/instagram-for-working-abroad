@@ -17,6 +17,8 @@
 		A9479B191E7FD843008697AE /* SHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9479B151E7FD843008697AE /* SHViewController.swift */; };
 		A9479B1A1E7FD843008697AE /* SHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9479B161E7FD843008697AE /* SHViewController.xib */; };
 		A9479B1D1E7FD8BD008697AE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9479B1C1E7FD8BD008697AE /* Media.xcassets */; };
+		A94FC9F61E812E85000E2FB5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94FC9F51E812E85000E2FB5 /* CollectionViewController.swift */; };
+		A94FC9F81E812F0E000E2FB5 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94FC9F71E812F0E000E2FB5 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		A9479B151E7FD843008697AE /* SHViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHViewController.swift; sourceTree = "<group>"; };
 		A9479B161E7FD843008697AE /* SHViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHViewController.xib; sourceTree = "<group>"; };
 		A9479B1C1E7FD8BD008697AE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		A94FC9F51E812E85000E2FB5 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		A94FC9F71E812F0E000E2FB5 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				A9479B1C1E7FD8BD008697AE /* Media.xcassets */,
 				A9479B0A1E7FD796008697AE /* LaunchScreen.storyboard */,
 				A9479B0D1E7FD796008697AE /* Info.plist */,
+				A94FC9F51E812E85000E2FB5 /* CollectionViewController.swift */,
+				A94FC9F71E812F0E000E2FB5 /* FilterViewController.swift */,
 			);
 			path = "instagram-clone";
 			sourceTree = "<group>";
@@ -162,10 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94FC9F81E812F0E000E2FB5 /* FilterViewController.swift in Sources */,
 				A9479B041E7FD796008697AE /* ViewController.swift in Sources */,
 				A9479B021E7FD796008697AE /* AppDelegate.swift in Sources */,
 				A9479B171E7FD843008697AE /* SHCollectionViewCell.swift in Sources */,
 				A9479B191E7FD843008697AE /* SHViewController.swift in Sources */,
+				A94FC9F61E812E85000E2FB5 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +333,7 @@
 				A9479B121E7FD796008697AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
