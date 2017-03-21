@@ -17,7 +17,8 @@ class FilterViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = image!
-
+        collectionView.dataSource = self
+        collectionView.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -30,18 +31,20 @@ class FilterViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = UICollectionViewCell()
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+//        let cell = UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCell", for: indexPath) as! FilterCell
+        cell.filterImage.image = image
+        cell.filterLabel.text = "filter \(indexPath.row)"
         
         // Configure the cell
         return cell
