@@ -27,11 +27,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func shViewControllerImageDidFilter(image: UIImage) {
-        //
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
     }
     
     func shViewControllerDidCancel() {
-        // 
+        //
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
