@@ -37,8 +37,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="필터 선택"/>
                                 <connections>
-                                    <action selector="filterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhe-Cl-dBG"/>
-                                    <segue destination="pWP-7e-2me" kind="show" id="wIf-QA-eGw"/>
+                                    <segue destination="pWP-7e-2me" kind="show" identifier="FilterSegue" id="wIf-QA-eGw"/>
                                 </connections>
                             </button>
                         </subviews>

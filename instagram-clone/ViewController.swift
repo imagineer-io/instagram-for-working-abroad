@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, SHViewControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
+    var image: UIImage?
     
     @IBAction func buttonPressed(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
@@ -37,6 +38,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imageView.image = image
+            self.image = image
             self.dismiss(animated: true, completion: nil)
         }
     }
@@ -50,6 +52,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "FilterSegue" {
+            let filterViewController = segue.destination as! FilterViewController
+            filterViewController.image = image
+        }
     }
 
 
